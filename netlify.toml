@@ -6,3 +6,10 @@
 
 [context.deploy-preview]
   command = "yarn build-preview"
+
+[redirects]
+  from = "/cimg/*"
+  to = """
+    https://res.cloudinary.com/ranarch/image/fetch/q_auto/https://tender-heyrovsky-d77250.netlify.app/img/:splat\
+    """
+  status = 200
